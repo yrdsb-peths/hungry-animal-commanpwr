@@ -8,7 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
+    public int score = 0;
+    
+    public Label scoreLabel = new Label(0, 80);
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -20,6 +22,8 @@ public class MyWorld extends World
         Ant x = new Ant();
         addObject(x, 300, 350);
         
+        addObject(scoreLabel, 50, 50);
+        
         spawnBread();
     }
     
@@ -29,5 +33,17 @@ public class MyWorld extends World
         int y = 0;
         Bread bread = new Bread();
         addObject(bread, x, y);
+    }
+    
+    public void increaseScore()
+    {
+        score++;
+        scoreLabel.setValue(score);
+    }
+    
+    public void gameOver()
+    {
+        Label gameOverLabel = new Label(" Game Over :'( ", 100);
+        addObject(gameOverLabel, 300, 200);
     }
 }

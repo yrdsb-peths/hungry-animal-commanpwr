@@ -1,12 +1,24 @@
 #Greenfoot project file
 class.Ant.image=ant3.png
 class.Bread.image=bread.png
+dependency1.from=MyWorld
+dependency1.to=Ant
+dependency1.type=UsesDependency
+dependency2.from=MyWorld
+dependency2.to=Bread
+dependency2.type=UsesDependency
+dependency3.from=Ant
+dependency3.to=MyWorld
+dependency3.type=UsesDependency
+dependency4.from=Ant
+dependency4.to=Bread
+dependency4.type=UsesDependency
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
 height=551
-package.numDependencies=0
+package.numDependencies=4
 package.numTargets=3
 project.charset=UTF-8
 publish.hasSource=false
