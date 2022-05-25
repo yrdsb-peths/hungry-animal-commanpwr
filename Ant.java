@@ -22,8 +22,9 @@ public class Ant extends Actor
         if(isTouching(Bread.class))
         {
             removeTouching(Bread.class);
-            MyWorld world = (MyWorld) getWorld();
+            MyWorld world = (MyWorld)getWorld();
             world.spawnBread();
+            world.increaseScore();
         }
     }
 }
