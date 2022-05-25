@@ -15,7 +15,7 @@ public class MyWorld extends World
         Ant x = new Ant();
         addObject(x, 300, 325);
         
-        Label scoreLabel = new Label(0, 80);
+        scoreLabel = new Label(0, 80);
         addObject(scoreLabel, 50, 50);
         spawnBread();
     }
